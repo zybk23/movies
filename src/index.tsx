@@ -17,7 +17,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        {/* <Navigation /> */}
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <Routes>
             <Route path="/" element={<Products />} />

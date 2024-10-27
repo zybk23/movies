@@ -5,12 +5,8 @@ import {
   ActionReducerMapBuilder,
 } from "@reduxjs/toolkit";
 import axios from "axios";
-import {
-  apiKey,
-  IFilterParams,
-  IMovieDetails,
-  IMovieType,
-} from "../../utils/types";
+import { IFilterParams, IMovieDetails, IMovieType } from "../../utils/types";
+import { apiKey } from "../../utils/helpers";
 
 export const getMovies = createAsyncThunk(
   "movies/getMovies",

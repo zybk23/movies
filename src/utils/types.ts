@@ -13,8 +13,6 @@ export interface IFilterParams {
   search?: string | null;
 }
 
-export const apiKey = "d8c3ffd3";
-
 export interface IMovieDetails {
   Title?: string;
   Year?: string;

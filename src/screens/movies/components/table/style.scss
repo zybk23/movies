@@ -1,0 +1,54 @@
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
+
+  thead {
+    th {
+      background-color: #55608f;
+      text-align: left;
+      padding: 20px;
+
+      @media screen and (max-width: 720px) {
+        padding: 10px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(157, 98, 98, 0.3);
+      }
+    }
+
+    td {
+      position: relative;
+      color: #333;
+      text-align: left;
+      vertical-align: top;
+      padding: 20px;
+
+      @media screen and (max-width: 720px) {
+        padding: 6px;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 10px; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  th {
+    text-align: left;
+  }
+}

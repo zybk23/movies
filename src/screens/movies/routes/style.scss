@@ -1,0 +1,44 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  gap: 24px;
+
+  @media screen and (max-width: 720px) {
+    height: auto;
+    padding: 12px;
+  }
+
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+    }
+
+    .year {
+      width: 400px;
+
+      @media screen and (max-width: 720px) {
+        width: 300px;
+      }
+    }
+
+    .clear {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: rgb(93, 141, 235);
+      cursor: pointer;
+    }
+  }
+}
